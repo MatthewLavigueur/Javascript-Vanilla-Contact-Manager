@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+ 
+</head>
+<body>
+    <div class="container mt-8 text-center">
+        <h1 class="display-8 text-center text-primary">Contact Form</h1>
+            <div class=" text-center ">
+                    <label id="error"></label>
+                        <div id="form-group">
+                            <input placeholder="FIRSTNAME" id="FName"  type="text" class="form-control" >
+                        </div>  
+                            <div id="form-group">
+                            <input placeholder="LASTNAME" id="LName"  type="text" class="form-control" >
+                            </div>  
+                        <div id="form-group">
+                            <input placeholder="PHONENUMBER" id="Phone"  type="text" class="form-control" >
+                        </div>  
+                        <input value="Add Contact" onclick="userInputValidation()" type="submit"  class="btn btn-primary btn-block mt-2">
+                       <p id="duplicateFound"></p>
+                    
+            </div>
+    </div>
+<script src="ContactManager.js"></script>
+<div class="container mt-8">
+    <h1 class="display-8 text-center text-primary" >Contact Managment</h1>
+        <div class="text-center">
+            <input value="Ascending Order" type="submit" onclick="ascending()" class="btn btn-primary btn-block mt-2">
+                <label class="text-primary" >FIRSTNAME</label><input type="radio" value="FirstName" name="ascending">
+                <label class="text-primary" >LASTNAME</label><input type="radio" value="LastName" name="ascending">   
+            <input value="Descending Order" type="submit" onclick="descending()"  class="btn btn-primary btn-block mt-2">
+            <input value="Capitalize" type="submit" onclick="capitalize()"  class="btn btn-primary btn-block mt-2">
+            <input value="Duplicates" type="submit" onclick="dup()"  class="btn btn-primary btn-block mt-2" >
+        </div>
+</div>   
+</body>
+</html>
+
